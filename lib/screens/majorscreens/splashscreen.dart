@@ -14,7 +14,7 @@ class SplashScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                "images/landing.png",
+                "assets/images/landing.png",
               ),
               const SizedBox(
                 height: 20,
@@ -35,10 +35,11 @@ class SplashScreen extends StatelessWidget {
               ),
               ElevatedButton(
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const signup()),
-                        );
-              },
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const signup()),
+                    );
+                  },
                   child: const Text(
                     "Let's go",
                   ))
