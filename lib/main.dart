@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:foody/screens/onboarding/login.dart';
+import 'package:foody/screens/majorscreens/SplashScreen.dart';
+
+
 
 void main() {
   runApp(const MyApp());
@@ -12,13 +14,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Foody',
       theme: ThemeData(
       
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 219, 35, 35)),
         useMaterial3: true,
       ),
-      home: login(),
+      home: const SplashScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
