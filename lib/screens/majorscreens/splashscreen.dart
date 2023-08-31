@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:foody/screens/onboarding/signup.dart';
 
-class splashscreen extends StatelessWidget {
-  const splashscreen({super.key});
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class splashscreen extends StatelessWidget {
                 height: 2,
               ),
               const Text(
-                "where your taste bugs meet \n         our tasty food",
+                "where your taste buds meet \n         our tasty food",
                 style: TextStyle(fontWeight: FontWeight.w500),
               ),
               const SizedBox(

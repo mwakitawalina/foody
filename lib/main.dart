@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:foody/screens/majorscreens/splashscreen.dart';
+import 'package:foody/screens/majorscreens/SplashScreen.dart';
+
 
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 219, 35, 35)),
         useMaterial3: true,
       ),
-      home: const splashscreen(),
+      home: const SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
