@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foody/screens/majorscreens/SplashScreen.dart';
-
+import 'screens/majorscreens/landing.dart';
 
 
 void main() {
@@ -16,12 +15,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Foody',
       theme: ThemeData(
-      
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 219, 35, 35)),
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color.fromARGB(255, 219, 35, 35)),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
-      debugShowCheckedModeBanner: false,
+      home:  SplashScreen(
+        seconds: 5,
+          navigateAfterSeconds: landing(),
+          image: new Image.asset('assets/images/landing.png'),
+          photoSize: 100.0,
+          backgroundColor: Colors.blue,
+          styleTextUnderTheLoader: new TextStyle(),
+          loaderColor: Colors.white),
+       debugShowCheckedModeBanner: false,
     );
   }
 }

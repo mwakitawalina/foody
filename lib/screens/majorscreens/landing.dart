@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:foody/screens/onboarding/signup.dart';
 
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({super.key});
+class landing extends StatelessWidget {
+  const landing ({super.key});
 
   @override
   Widget build(BuildContext context) {
