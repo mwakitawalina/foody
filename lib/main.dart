@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/majorscreens/landing.dart';
 
 
+
 void main() {
   runApp(const MyApp());
 }
