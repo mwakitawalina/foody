@@ -37,14 +37,18 @@ class _LandingState extends State<Landing> {
               ),
               const Text(
                 "Welcome to Foody App",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    color: Colors.white),
               ),
               const SizedBox(
                 height: 2,
               ),
               const Text(
                 "where your taste buds meet \n         our tasty food",
-                style: TextStyle(fontWeight: FontWeight.w500),
+                style:
+                    TextStyle(fontWeight: FontWeight.w500, color: Colors.white),
               ),
               const SizedBox(
                 height: 90,
