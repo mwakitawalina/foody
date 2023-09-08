@@ -23,7 +23,7 @@ class _LandingState extends State<Landing> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 245, 113, 25),
+      backgroundColor: const Color(0xfff54748),
       body: Center(
         child: Expanded(
           child: Column(
