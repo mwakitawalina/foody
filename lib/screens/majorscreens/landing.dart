@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:foody/screens/onboarding/signup.dart';
+import 'package:foody/styles.dart';
 
 class Landing extends StatefulWidget {
   const Landing({super.key});
@@ -39,7 +40,7 @@ class _LandingState extends State<Landing> {
                 "Welcome to Foody App",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 20,
+                    fontSize: MediumTextSize,
                     color: Colors.white),
               ),
               const SizedBox(
@@ -47,8 +48,10 @@ class _LandingState extends State<Landing> {
               ),
               const Text(
                 "where your taste buds meet \n         our tasty food",
-                style:
-                    TextStyle(fontWeight: FontWeight.w500, color: Colors.white),
+                style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white,
+                    fontSize: BodyTextSize),
               ),
               const SizedBox(
                 height: 90,
