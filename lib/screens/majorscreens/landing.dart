@@ -1,8 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:foody/screens/onboarding/signup.dart';
 
-class landing extends StatelessWidget {
-  const landing ({super.key});
+class Landing extends StatefulWidget {
+  const Landing({super.key});
+
+  @override
+  State<Landing> createState() => _LandingState();
+}
+
+class _LandingState extends State<Landing> {
+  @override
+  void initState() {
+    super.initState();
+    initialization();
+  }
+
+  void initialization() async {
+    FlutterNativeSplash.remove();
+  }
 
   @override
   Widget build(BuildContext context) {
