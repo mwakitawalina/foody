@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:foody/screens/majorscreens/dashboard.dart';
 import 'package:foody/screens/onboarding/login.dart';
 import 'package:foody/screens/onboarding/signup.dart';
 
@@ -81,42 +82,67 @@ class _LandingState extends State<Landing> {
                   const SizedBox(
                     height: 80,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 15),
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFFf54748),
-                          minimumSize: const Size(180, 30)),
-                      child: const Text('Set Delivery Location'),
-                    ),
-                  ),
-                  const SizedBox(height: 10),
-                  CustomButton(
-                      text: "Signup",
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => signup()));
-                      }, ),
-                   OutlinedButton(
+                  
+                    // CustomButton(
+                    //   text: "Set Delivery Location",
+                    //   onPressed: () {
+                    //     Navigator.push(context,
+                    //         MaterialPageRoute(builder: (context) => const signup()));
+                    //   },
+                    //   ),
+                       OutlinedButton(
                     onPressed: () {
                      Navigator.push(
                          context,
                          MaterialPageRoute(
-                             builder: (context) => const signup()));
+                             builder: (context) => const Dashboard()));
                    },
                     style: OutlinedButton.styleFrom(
                      side: const BorderSide(color: Color(0xFFf54748)),
                      backgroundColor:
-                             const Color.fromARGB(255, 255, 252, 252),
-                        minimumSize: const Size(180, 30)),
+                       const Color.fromARGB(255, 255, 252, 252),
+                        minimumSize: const Size(210, 45)),
                      child: const Text(
-                       'Sign Up',
+                       'Set Delivery Location',
                       style: TextStyle(
                         color: Color(0xFFf54748),
                     ),
                     ),
                    ),
+                    // child: ElevatedButton(
+                    //   onPressed: () {},
+                    //   style: ElevatedButton.styleFrom(
+                    //       backgroundColor: const Color(0xFFf54748),
+                    //       minimumSize: const Size(180, 30)),
+                    //   child: const Text('Set Delivery Location'),
+                    // ),
+                  
+                  const SizedBox(height: 10),
+                  CustomButton(
+                      text: "Signup",
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => const signup()));
+                      }, ),
+                  //  OutlinedButton(
+                  //   onPressed: () {
+                  //    Navigator.push(
+                  //        context,
+                  //        MaterialPageRoute(
+                  //            builder: (context) => const signup()));
+                  //  },
+                  //   style: OutlinedButton.styleFrom(
+                  //    side: const BorderSide(color: Color(0xFFf54748)),
+                  //    backgroundColor:
+                  //            const Color.fromARGB(255, 255, 252, 252),
+                  //       minimumSize: const Size(180, 30)),
+                  //    child: const Text(
+                  //      'Sign Up',
+                  //     style: TextStyle(
+                  //       color: Color(0xFFf54748),
+                  //   ),
+                  //   ),
+                  //  ),
                   const SizedBox(height: 20),
                   RichText(
                     text: TextSpan(

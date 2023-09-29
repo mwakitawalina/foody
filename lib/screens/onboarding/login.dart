@@ -29,7 +29,7 @@ class _loginState extends State<login> {
               height: double.infinity,
             ),
             Padding(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               child: Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -42,44 +42,44 @@ class _loginState extends State<login> {
                         fit: BoxFit.cover,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     TextField(
-                      cursorColor: Color(0xFFf54748),
+                      cursorColor: const Color(0xFFf54748),
                       decoration: InputDecoration(
                           labelText: "Email",
-                          focusedBorder: OutlineInputBorder(
+                          focusedBorder: const OutlineInputBorder(
                               borderSide: BorderSide(color: Color(0xFFf54748))),
-                          enabledBorder: OutlineInputBorder(
+                          enabledBorder: const OutlineInputBorder(
                               borderSide: BorderSide(color: Color(0xFFf54748))),
                           labelStyle: TextStyle(
                             color: isEmailFocused
-                                ? Color(0xFFf54748)
+                                ? const Color(0xFFf54748)
                                 : Colors.grey,
                           ),
                           filled: true,
                           fillColor: Colors.white.withOpacity(0.7)),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     TextField(
                       obscureText: true,
-                      cursorColor: Color(0xFFf54748),
+                      cursorColor: const Color(0xFFf54748),
                       decoration: InputDecoration(
                           labelText: "Password",
-                          focusedBorder: OutlineInputBorder(
+                          focusedBorder: const OutlineInputBorder(
                               borderSide: BorderSide(color: Color(0xFFf54748))),
-                          enabledBorder: OutlineInputBorder(
+                          enabledBorder: const OutlineInputBorder(
                               borderSide: BorderSide(color: Color(0xFFf54748))),
                           labelStyle: TextStyle(
                             color: isPasswordFocused
-                                ? Color(0xFFf54748)
+                                ? const Color(0xFFf54748)
                                 : Colors.grey,
                           ),
                           focusedErrorBorder: OutlineInputBorder(
-                              borderSide: BorderSide(color: Color(0xFFf54748), width: 1.0),
+                              borderSide: const BorderSide(color: Color(0xFFf54748), width: 1.0),
                               borderRadius: BorderRadius.circular(10.0),
                               ),
                              
@@ -89,7 +89,7 @@ class _loginState extends State<login> {
                     ),
                     
 
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     CustomButton(
@@ -98,7 +98,7 @@ class _loginState extends State<login> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Dashboard()));
+                                  builder: (context) => const Dashboard()));
                         }, text: 'Submit',),
                     // ElevatedButton(
                     //   onPressed: () {
