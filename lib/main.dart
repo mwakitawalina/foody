@@ -17,8 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Foody',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(255, 219, 35, 35),
+      fontFamily: 'Poppins',
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: const Color.fromARGB(255, 219, 35, 35),
         ),
         useMaterial3: true,
       ),
