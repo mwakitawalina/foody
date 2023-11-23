@@ -43,3 +43,6 @@ class Dashboard extends StatelessWidget {
     );
   }
 }
+    return const Placeholder();
+  }
+}
